@@ -1,16 +1,17 @@
-import About from "./commands/About";
 import Clear from "./commands/Clear";
 import Echo from "./commands/Echo";
-import Education from "./commands/Education";
-import Email from "./commands/Email";
+import Exit from "./commands/Exit";
+import FAQ from "./commands/FAQ";
 import GeneralOutput from "./commands/GeneralOutput";
-import Gui from "./commands/Gui";
 import Help from "./commands/Help";
-import Welcome from "./commands/Welcome";
 import History from "./commands/History";
-import Projects from "./commands/Projects";
-import Socials from "./commands/Socials";
+import Invite from "./commands/Invite";
+import Privacy from "./commands/Privacy";
+import Support from "./commands/Support";
 import Themes from "./commands/Themes";
+import ToS from "./commands/ToS";
+import Vote from "./commands/Vote";
+import Welcome from "./commands/Welcome";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 import { useContext } from "react";
@@ -23,7 +24,7 @@ type Props = {
 const Output: React.FC<Props> = ({ index, cmd }) => {
   const { arg } = useContext(termContext);
 
-  const specialCmds = ["projects", "socials", "themes", "echo"];
+  const specialCmds = ["themes", "echo"];
 
   // return 'Usage: <cmd>' if command arg is not valid
   // eg: about tt
@@ -34,20 +35,21 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
     <OutputContainer data-testid={index === 0 ? "latest-output" : null}>
       {
         {
-          about: <About />,
           clear: <Clear />,
           echo: <Echo />,
-          education: <Education />,
-          email: <Email />,
-          gui: <Gui />,
+          exit: <Exit />,
+          faq: <FAQ />,
           help: <Help />,
           history: <History />,
-          projects: <Projects />,
-          pwd: <GeneralOutput>/home/satnaing</GeneralOutput>,
-          socials: <Socials />,
+          invite: <Invite />,
+          privacy: <Privacy />,
+          pwd: <GeneralOutput>/home/hackerman14</GeneralOutput>,
+          support: <Support />,
           themes: <Themes />,
+          tos: <ToS />,
+          vote: <Vote />,
           welcome: <Welcome />,
-          whoami: <GeneralOutput>visitor</GeneralOutput>,
+          whoami: <GeneralOutput>i don't know lol</GeneralOutput>,
         }[cmd]
       }
     </OutputContainer>

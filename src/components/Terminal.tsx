@@ -27,18 +27,19 @@ type Command = {
 }[];
 
 export const commands: Command = [
-  { cmd: "about", desc: "about Sat Naing", tab: 8 },
   { cmd: "clear", desc: "clear the terminal", tab: 8 },
   { cmd: "echo", desc: "print out anything", tab: 9 },
-  { cmd: "education", desc: "my education background", tab: 4 },
-  { cmd: "email", desc: "send an email to me", tab: 8 },
-  { cmd: "gui", desc: "go to my portfolio in GUI", tab: 10 },
+  { cmd: "exit", desc: "close the console", tab: 10 },
+  { cmd: "faq", desc: "frequently asked question no one asked", tab: 10 },
+  { cmd: "support", desc: "how to contact me", tab: 6 },
+  { cmd: "invite", desc: "invite bot to your Discord server", tab: 7 },
   { cmd: "help", desc: "check available commands", tab: 9 },
   { cmd: "history", desc: "view command history", tab: 6 },
-  { cmd: "projects", desc: "view projects that I've coded", tab: 5 },
+  { cmd: "privacy", desc: "read privacy policy", tab: 6 },
   { cmd: "pwd", desc: "print current working directory", tab: 10 },
-  { cmd: "socials", desc: "check out my social accounts", tab: 6 },
   { cmd: "themes", desc: "check available themes", tab: 7 },
+  { cmd: "tos", desc: "read terms of service", tab: 10 },
+  { cmd: "vote", desc: "vote for the bot", tab: 9 },
   { cmd: "welcome", desc: "display hero section", tab: 6 },
   { cmd: "whoami", desc: "about current user", tab: 7 },
 ];

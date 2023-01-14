@@ -1,14 +1,12 @@
 import { UsageDiv } from "./styles/Output.styled";
 
 type Props = {
-  cmd: "themes" | "projects" | "socials";
+  cmd: "themes";
   marginY?: boolean;
 };
 
 const arg = {
   themes: { placeholder: "theme-name", example: "ubuntu" },
-  projects: { placeholder: "project-no", example: "ubuntu" },
-  socials: { placeholder: "social-no", example: "ubuntu" },
 };
 
 const Usage: React.FC<Props> = ({ cmd, marginY = false }) => {
