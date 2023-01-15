@@ -1,7 +1,7 @@
 {
-  "name": "Terminal Portfolio by SN",
+  "name": "hackerman14 Terminal Experience",
   "short_name": "Terminal",
-  "description": "Sat Naing's terminal portfolio website coded with ReactJS.",
+  "description": "hackerman14 Website but in a form of Terminal.",
   "start_url": "/",
   "icons": [
     {
@@ -40,7 +40,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#1d2a35",
-  "background_color": "#1d2a35",
+  "theme_color": "#779c70",
+  "background_color": "#779c70",
   "display": "standalone"
 }
