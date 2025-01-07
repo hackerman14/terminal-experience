@@ -12,15 +12,25 @@ const Privacy: React.FC = () => {
       <br />
       <Highlight>Website Related</Highlight>
       <p>
-        I don't track users with Google Analytics or any types of trackers. The
-        website is hosted on Cloudflare, subdomain provided by Cloudflare as
-        well.
+        <strong>No Tracking</strong>: We do not use Google Analytics or any
+        other tracking services to monitor user activity.
+      </p>
+      <p>
+        <strong>Hosting and Security</strong>: Our website is hosted on GitHub,
+        with connections secured through Cloudflare.
       </p>
       <br />
       <Highlight>Bot Related</Highlight>
       <p>
-        I don't store any types of file such as user logs, or any kinds of
-        files. (Or the fact I don't know how to store them?)
+        <strong>API Usage</strong>: Our bot utilizes data from multiple APIs
+        available on the internet. However, we do not collect or store any
+        personal data from these interactions.
+      </p>
+      <p>
+        <strong>Discord Data</strong>: All data related to Discord interactions
+        are obtained through the Discord API and are handled in accordance with
+        the Discord Developer Policy. We do not retain or store any personal
+        data from these interactions.
       </p>
     </Wrapper>
   );
